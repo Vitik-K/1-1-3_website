@@ -1,0 +1,80 @@
+/* .......................................Custom variables....................................... */
+:root {
+    --ctRed:#fc6565;
+    --ctDarkBlue:#07222e;
+    --ctCream: #F1F1E6;
+}
+/* .......................................Body/general styling....................................... */
+body{
+    background-color: var(--ctDarkBlue); 
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* font */
+    background-image: url(images/jeremy-bishop-G9i_plbfDgk-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+section{
+    min-height: 100vh;
+} 
+
+
+/* .......................................Main content styling....................................... */
+ .mainContent{ /*gives content divs margin and padding */
+    border-radius: 7% / 7%; /* more rounded edges*/
+    background-color: var(--ctCream);
+    padding-top: 0.5%;
+    background-color: rgb(51,70,74,0.25);
+    color:var(--ctCream);
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 10px 10px 10px darkslategrey;
+}
+
+
+/* .........primary fade-in for main content........... */
+
+.fadeIn{
+    animation:fadeInTitles 4s;
+}
+
+@keyframes fadeInTitles{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+  /* .........FadeIn2........... */
+
+  .fadeIn2{
+    animation:fadeInSecond 4s;
+}
+
+@keyframes fadeInSecond{
+    0%{
+        opacity:0;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+/*  ....................Footer styling................... */
+footer{
+    border-top: 3px solid var(--ctCream);
+    box-shadow: 10px 0px 10px 10px darkslategrey;
+}
+.footerCredit{
+    color: var(--ctCream);
+    text-decoration: none;
+    font-size:medium;
+}
+.footerCredit:hover{
+    color: var(--ctRed);
+}
